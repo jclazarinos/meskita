@@ -1,4 +1,4 @@
-const API = 'http://localhost:10000/api';
+const API = 'https://meskita-so86.onrender.com//api';
 
 // Usuarios
 const formUsuario = document.getElementById('formUsuario');
