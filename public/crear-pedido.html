@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear Pedido</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .platos-panel, .pedido-panel {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .plato-card {
+      background: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+    .plato-card:hover {
+      background-color: #f0f0f0;
+    }
+    .plato-card button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .pedido-item {
+      background: #f4f4f4;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 6px;
+    }
+    .total {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .btn-enviar {
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Crear Nuevo Pedido</h2>
+
+  <div class="container">
+    <div class="platos-panel">
+      <h3>Platos disponibles</h3>
+      <div id="platosContainer"></div>
+    </div>
+
+    <div class="pedido-panel">
+      <h3>Pedido Actual</h3>
+      <div id="listaPedido"></div>
+      <div class="total">Total: S/. <span id="totalPedido">0.00</span></div>
+      <button class="btn-enviar" id="enviarPedidoBtn">Enviar Pedido</button>
+    </div>
+  </div>
+
+  <script src="crear-pedido.js"></script>
+</body>
+</html>

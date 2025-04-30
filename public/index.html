@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🍽️ Bienvenido al Sistema de Pedidos</h1>
+
+  <section>
+    <h2>Iniciar Sesión</h2>
+    <form id="formLogin">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Contraseña" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>¿No tienes cuenta? Regístrate</h2>
+    <form id="formRegister">
+      <input type="text" id="regNombre" placeholder="Nombre" required />
+      <input type="email" id="regEmail" placeholder="Email" required />
+      <input type="password" id="regPassword" placeholder="Contraseña" required />
+      <select id="regRol">
+        <option value="mozo">Mozo</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -14,6 +14,7 @@ connectDB();
 
 // Middleware
 app.use(express.json());
+app.use(express.static('public'));
 
 // Ruta base
 app.get('/', (req, res) => {

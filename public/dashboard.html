@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Pedidos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>🍽️ Sistema de Pedidos</h1>
+
+  <section id="usuarios">
+    <h2>👤 Usuarios</h2>
+    <form id="formUsuario">
+      <input type="text" placeholder="Nombre" id="nombreUsuario" required />
+      <input type="email" placeholder="Email" id="emailUsuario" required />
+      <input type="password" placeholder="Contraseña" id="passwordUsuario" required />
+      <select id="rolUsuario">
+        <option value="mozo">Mozo</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Crear Usuario</button>
+    </form>
+    <ul id="listaUsuarios"></ul>
+  </section>
+
+  <section id="platos">
+    <h2>🍜 Platos</h2>
+    <form id="formPlato">
+      <input type="text" placeholder="Nombre" id="nombrePlato" required />
+      <input type="text" placeholder="Descripción" id="descripcionPlato" />
+      <input type="number" placeholder="Precio" id="precioPlato" required />
+      <input type="text" placeholder="Categoría" id="categoriaPlato" />
+      <button type="submit">Crear Plato</button>
+    </form>
+    <ul id="listaPlatos"></ul>
+  </section>
+  <section>
+    <a href="crear-pedido.html">
+        <button style="padding: 10px 20px; background-color: #2196f3; color: white; border: none; border-radius: 6px; margin: 10px;">
+          ➕ Crear Pedido
+        </button>
+      </a>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
