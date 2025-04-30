@@ -1,4 +1,4 @@
-const API = 'https://meskita-so86.onrender.com//api';
+const API = 'https://meskita-so86.onrender.com/api';
 
 // Registro
 document.getElementById('formRegister').addEventListener('submit', async (e) => {

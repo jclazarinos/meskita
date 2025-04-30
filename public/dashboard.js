@@ -1,4 +1,4 @@
-const API = 'https://meskita-so86.onrender.com//api';
+const API = 'https://meskita-so86.onrender.com/api';
 
 // Usuarios
 const formUsuario = document.getElementById('formUsuario');
